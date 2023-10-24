@@ -6,6 +6,7 @@ from magicbot import StateMachine, timed_state, state
 from components import swervedrive
 from common import vision
 
+
 class Shooter(StateMachine):
     """
     Shooter is a StateMachine which means every iteration (10ms),
@@ -13,8 +14,9 @@ class Shooter(StateMachine):
     Speeds should be changed before the execution.
 
     @timed_states will run everything inside them and after the duration,
-    they will pass to the next function. 
+    they will pass to the next function.
     """
+
     # Get the motors, drive and vision from injection
     drive: swervedrive.SwerveDrive
 
